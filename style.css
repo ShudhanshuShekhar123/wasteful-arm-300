@@ -76,9 +76,11 @@
     text-align: center;
 }
 
+
 #second>#box1:hover {
     color: black
 }
+
 
 #box1 {
     background-color: #e22071;
