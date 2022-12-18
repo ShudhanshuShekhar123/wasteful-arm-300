@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;300&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    * {
+                margin: 0px;
+
+            }
+
+  #signin{
+    background-image:linear-gradient(#FC4A1A,#F7B733);
+    /* height:700px; */
+    /* border:2px solid green; */
+    
+    font-family: 'Chivo Mono', monospace;
+    height:670px;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 80px;
+    
+   }
+   #form1{
+    display:flex;
+    flex-direction: column;
+    /* border:2px solid green; */
+    height:200px;
+    width:400px;
+    font-family: 'Chivo Mono', monospace;
+    padding-top:40px;
+    margin-bottom: 30px;;
+    background-image: linear-gradient(#FF9966,#FF5E62);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   }
+
+   #submit{
+    width:250px;
+    margin-left:70px;
+    height:50px;
+    font-family: 'Chivo Mono', monospace;
+    background-image: linear-gradient(#DCE35B,#45B649);
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    border:2px solid black;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+   
+   }
+
+   #form1 #email, #form1>#password{
+    height:30px;
+    border:2px solid rgb(18, 18, 18);
+    margin-bottom: 20px;
+    font-family: 'Chivo Mono', monospace;
+    background-color: rgb(231, 205, 171);
+    font-size: 19PX;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+   }
+   #signin>h5{
+    font-size: 15px;
+    margin-bottom:5px;
+    font-family: 'Chivo Mono', monospace;
+   }
+   #signin>a{
+    font-size: 20px;
+    text-decoration: none;
+    width:120px;
+    font-family: 'Chivo Mono', monospace;
+    height:30px;
+    cursor:pointer;
+    padding-top: 5px;;
+ text-align: center;
+    /* border:2px solid black; */
+    color:black;
+    background-image: linear-gradient(#56CCF2,#2F80ED);
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+   }
+   #heading{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 70px;;
+   }
+   
+  </style>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in Page</title>
+  </head>
+
+  <body>
+    <div class="nav">
+     
+      
+    </div>
+    <div id="signin">
+      <h1 id="heading">Please Enter Your Details</h1>
+      <form id="form1">
+        <input type="email" id="email" placeholder="Enter your email" />
+        <input type="password" id="password" placeholder="Enter password" />
+        <input id="submit" type="submit" value="Sign in"/>
+      </form>
+      <h5>Don't have an account yet?</h5>
+      <a href="./signup.html">Sign up</a>
+    </div>
+
+  </body>
+  <script>
+
+    let myform1 = document.getElementById("form1");
+    let submit = document.getElementById("submit");
+    let heading = document.getElementById("heading")
+
+    myform1.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let formData1 = {
+        email: myform1.email.value,
+        password: myform1.password.value,
+      }
+      dom1()
+
+      function dom1() {
+        let flag;
+        let user_data = JSON.parse(localStorage.getItem("account-data"))
+
+        for (let i = 0; i <= user_data.length - 1; i++) {
+          flag = true;
+          if (user_data[i].email == formData1.email &&
+            user_data[i].password == formData1.password) {
+            heading.innerText = "** Sign in Successful **"
+            return;
+
+          } else if (user_data[i].email !== formData1.email ||
+            user_data[i].password !== formData1.password) {
+            flag = false;
+          }
+        }
+        if (flag == false) {
+          heading.innerText = "Wrong Credentials !"
+        }
+      }
+    })
+
+
+  </script>
+
+  </html>
+</body>
+
+</html>

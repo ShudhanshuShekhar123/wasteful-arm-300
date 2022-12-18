@@ -1,1 +1,134 @@
-<h1>how are you</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <ul id="first">
+
+            <li id="box4"><a href="./Home.html">Airtable</a></li>
+            <li id="navpro" class="box">Product</li>
+            <div id="div1" class="div2">
+                <h5><a href="./product.html">1.Overview</a></h5>
+                <h5><a href="./product.html">2.Features</a></h5>
+                <h5>3.Integrations</h5>
+                <h5>4.Enterprise Overview</h5>
+            </div>
+
+            <li id="navpro1" class="box4">Enterprise</li>
+            <div id="div3" class="div4">
+                <h5>1.Enterprise Overview</h5>
+                <h5>2.Enterprise Services</h5>
+                <h5>3.Enterprise Security</h5>
+            </div>
+            <li id="navpro2" class="box5">Resources</li>
+            <div id="div5" class="div6">
+                <h5>1.Webinars</h5>
+                <h5>2.Guides</h5>
+                <h5>3.Articles</h5>
+                <h5>4.Blog</h5>
+                <h5>5.API Docs</h5>
+                <h5>6.Custom Extensions</h5>
+                <h5>7.Developer Community</h5>
+                <h5>8.Community Forum</h5>
+            </div>
+        </ul>
+        <ul id="second">
+            <li id="box1"><a href="signup.html">Sign up for free</a></li>
+            <li id="box2"><a href="signin.html">Sign in</a></li>
+        </ul>
+    </nav>
+
+    <div id="product1">
+        <div id="product2">
+            <div>
+                <h1>Your platform for building connected apps</h1>
+            </div>
+            <div>
+                <p>Discover the single platform where teams can use shared data to build their own apps, connecting work
+                    and teams across the organization.</p>
+            </div>
+            <div id="signup-1"><a href="signup.html">Sign up for free</a></div>
+        </div>
+        <div id="product3">
+            <img src="https://images.ctfassets.net/wl95ljfippl8/7BVPICB7N2Ks0WvnXoCGRn/4a853110569f558185722c55cfdc1829/Tier1_WebHero_3024x2342.png?w=3840"
+                alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    let navpro = document.getElementById("navpro")
+    let div1 = document.getElementById("div1")
+    navpro.addEventListener("click", () => {
+        display()
+    })
+
+    function display() {
+        div1.classList.toggle("show")
+    }
+    window.onclick = function (event) {
+        if (!event.target.matches(".box")) {
+            let div2 = document.getElementsByClassName("div2")
+            for (let i = 0; i < div2.length; i++) {
+                let get = div2[i];
+                if (get.classList.contains('show')) {
+                    get.classList.remove('show')
+                }
+            }
+        }
+        if (!event.target.matches(".box4")) {
+            let div4 = document.getElementsByClassName("div4")
+            for (let i = 0; i < div4.length; i++) {
+                let get = div4[i];
+                if (get.classList.contains('showy')) {
+                    get.classList.remove('showy')
+                }
+            }
+        }
+        if (!event.target.matches(".box5")) {
+            let div6 = document.getElementsByClassName("div6")
+            for (let i = 0; i < div6.length; i++) {
+                let get = div6[i];
+                if (get.classList.contains('showy1')) {
+                    get.classList.remove('showy1')
+                }
+            }
+        }
+    }
+
+    let navpro1 = document.getElementById("navpro1")
+    let div3 = document.getElementById("div3")
+
+    navpro1.addEventListener("click", () => {
+        display1()
+    })
+
+    function display1() {
+        div3.classList.toggle("showy")
+    }
+
+    let navpro2 = document.getElementById("navpro2")
+    let div5 = document.getElementById("div5")
+
+    navpro2.addEventListener("click", () => {
+        display2()
+    })
+
+    function display2() {
+        div5.classList.toggle("showy1")
+    }
+
+
+
+</script>

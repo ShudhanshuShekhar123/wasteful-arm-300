@@ -8,6 +8,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
+   
 
     <title>Home Page</title>
     <style>
@@ -53,8 +54,8 @@
         </ul>
 
         <ul id="second">
-            <li id="box1"><a href="">Sign up for free</a></li>
-            <li id="box2"><a href="">Sign in</a></li>
+            <li id="box1"><a href="signup.html">Sign up for free</a></li>
+            <li id="box2"><a href="signin.html">Sign in</a></li>
         </ul>
 
     </nav>
@@ -64,7 +65,7 @@
             <h1>Connect everything. Achieve anything.</h1>
             <p>Accelerate work and unlock potential with powerful apps that connect your data, workflows and teams.This
                 is how.</p>
-            <div id="signup"><a href="">Sign up for free</a></div>
+            <div id="signup"><a href="signup.html">Sign up for free</a></div>
 
 
         </div>
@@ -95,7 +96,7 @@
                     alt=""></div>
         </div>
     </div>
-    <div id="container4">
+     <div id="container4">
         <div id="innercontainer4">
             <h1> Create solutions that mirror your business
             </h1>
@@ -122,7 +123,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <div id="outer1fitness">
@@ -179,10 +179,7 @@
     <div id="outer1fitness">
         <div id="outerfitness">
             <div id="fitness1">
-
                 <img src="https://static.airtable.com/images/homescreen/homepage-getsupport.jpg" alt="">
-
-
             </div>
             <div id="fitness2">
                 <span id="new">NEW</span>
@@ -266,80 +263,75 @@
         </div>
     </div>
 </body>
+</html> 
 
+ <script src="home.js"></script> 
 
-
-
-</html>
 <script>
 
-    let navpro = document.getElementById("navpro")
-    let div1 = document.getElementById("div1")
-    navpro.addEventListener("click", () => {
-        display()
-    })
 
-    function display() {
-        div1.classList.toggle("show")
-    }
+    
+let navpro = document.getElementById("navpro")
+let div1 = document.getElementById("div1")
+navpro.addEventListener("click", () => {
+    display()
+})
 
-    window.onclick = function (event) {
-        if (!event.target.matches(".box")) {
-            let div2 = document.getElementsByClassName("div2")
-
-            for (let i = 0; i < div2.length; i++) {
-                let get = div2[i];
-                if (get.classList.contains('show')) {
-                    get.classList.remove('show')
-                }
+function display() {
+    div1.classList.toggle("show")
+}
+window.onclick = function (event) {
+    if (!event.target.matches(".box")) {
+        let div2 = document.getElementsByClassName("div2")
+        for (let i = 0; i < div2.length; i++) {
+            let get = div2[i];
+            if (get.classList.contains('show')) {
+                get.classList.remove('show')
             }
-        } if (!event.target.matches(".box4")) {
-            let div4 = document.getElementsByClassName("div4")
-
-            for (let i = 0; i < div4.length; i++) {
-                let get = div4[i];
-                if (get.classList.contains('showy')) {
-                    get.classList.remove('showy')
-                }
-            }
-
         }
-        if (!event.target.matches(".box5")) {
-            let div6 = document.getElementsByClassName("div6")
-
-            for (let i = 0; i < div6.length; i++) {
-                let get = div6[i];
-                if (get.classList.contains('showy1')) {
-                    get.classList.remove('showy1')
-                }
+    }
+    if (!event.target.matches(".box4")) {
+        let div4 = document.getElementsByClassName("div4")
+        for (let i = 0; i < div4.length; i++) {
+            let get = div4[i];
+            if (get.classList.contains('showy')) {
+                get.classList.remove('showy')
             }
-
         }
-        
-
     }
-
-    let navpro1 = document.getElementById("navpro1")
-    let div3 = document.getElementById("div3")
-
-    navpro1.addEventListener("click", () => {
-        display1()
-    })
-
-    function display1() {
-        div3.classList.toggle("showy")
+    if (!event.target.matches(".box5")) {
+        let div6 = document.getElementsByClassName("div6")
+        for (let i = 0; i < div6.length; i++) {
+            let get = div6[i];
+            if (get.classList.contains('showy1')) {
+                get.classList.remove('showy1')
+            }
+        }
     }
+}
 
-    let navpro2 = document.getElementById("navpro2")
-    let div5 = document.getElementById("div5")
+let navpro1 = document.getElementById("navpro1")
+let div3 = document.getElementById("div3")
 
-    navpro2.addEventListener("click", () => {
-        display2()
-    })
+navpro1.addEventListener("click", () => {
+    display1()
+})
 
-    function display2() {
-        div5.classList.toggle("showy1")
-    }
+function display1() {
+    div3.classList.toggle("showy")
+}
+
+let navpro2 = document.getElementById("navpro2")
+let div5 = document.getElementById("div5")
+
+navpro2.addEventListener("click", () => {
+    display2()
+})
+
+function display2() {
+    div5.classList.toggle("showy1")
+}
+ 
 
 
 

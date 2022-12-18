@@ -1,12 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>sign up</h1>
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign up Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;300&display=swap" rel="stylesheet">
+        <style>
+            /* Write all necessery css here  */
+            * {
+                margin: 0px;
+
+            }
+
+            #signup {
+                /* border: 5px solid blue; */
+                height: 650px;
+                display: flex;
+                flex-direction: column;
+                /* justify-content: center; */
+                padding-top: 100px;
+                align-items: center;
+                /* background: rgb(32, 105, 151); */
+                /* background: rgb(224, 229, 230); */
+                background-image: linear-gradient(#00B09B,#96C93D);
+                font-family: 'Chivo Mono', monospace;
+                margin-bottom: 30px;
+                
+
+            }
+
+
+            #name,
+            #email,
+            #password {
+                height: 40px;
+                width: 400px;
+                display: block;
+                margin: 15px;
+                font-family: 'Chivo Mono', monospace;
+                font-size: 20px;
+                border:2px solid black;
+                background: rgb(167, 215, 223);
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+
+            #submit {
+                display: block;
+                width: 250px;
+                height: 50px;
+                border:2px solid black;
+                margin-left: 90px;
+                background-image: linear-gradient(#000046,#1CB5E0);
+                font-family: 'Chivo Mono', monospace;
+                border-radius: 18px;
+                margin-bottom: 25px;;
+                font-size: 25px;
+                cursor: pointer;
+                color: white;
+                
+               
+                  
+
+            }
+
+            #signup a {
+                display: block;
+                width: 150px;
+                height: 35px;
+                font-size: 20px;
+                /* border:2px solid blue; */
+                margin-left: 105px;
+                ;
+                text-align: center;
+                padding-top: 8px;
+                margin-right: 110px;
+                margin-top: 15px;
+                ;
+                font-family: 'Chivo Mono', monospace;
+                text-decoration: none;
+                border-radius: 18px;
+                ;
+                background-image: linear-gradient(#000046,#1CB5E0);
+                
+                color: white;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+
+            #signup a:hover {
+                color: rgb(24, 193, 52);
+
+            }
+
+            #submit:hover {
+                color: rgb(0, 255, 13);
+
+
+            }
+
+            #h11 {
+                margin-bottom: 20px;
+                margin-top: 10px;
+                ;
+            }
+
+            #h12 {
+                margin-bottom: 40px;
+                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            }
+
+            #password {
+                margin-bottom: 60px;
+            }
+
+            #form {
+                margin-bottom: 20px;
+                background-image: linear-gradient(#56CCF2 , #2F80ED);
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+           
+            
+                  
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="signup">
+            
+            <h1 id="h12">Create your free account</h1>
+            <form id="form">
+                <input type="text" id="name" placeholder="Enter your name">
+                <input type="email" id="email" placeholder="Enter work email">
+                <input type="password" id="password" placeholder="Enter password">
+                <input id="submit" type="submit" value="Sign up" />
+            </form>
+             <h4>Already have an account?</h4>
+            <a href="./signin.html">Sign in</a>
+        </div>
+
+    </body>
+    <script>
+
+        let myform = document.getElementById("form");
+        let submit = document.getElementById("submit");
+        let signup = document.getElementById("signup");
+
+        let data = JSON.parse(localStorage.getItem("account-data"))
+
+        if (data === null) {
+            data = [];
+        }
+        myform.addEventListener("submit", (e) => {
+            e.preventDefault()
+
+            let formData = {
+                name: myform.name.value,
+                email: myform.email.value,
+                password: myform.password.value
+            }
+            if (myform.name.value != "" && myform.email.value != "" && myform.password.value != "") {
+                let h1 = document.getElementById("h12")
+                h12.innerText = " ** Account successfully created **"
+                h12.style.color = "black"
+            } else {
+                h12.innerText = "Please fill all details!!"
+                h12.style.color = "black"
+
+
+            }
+            data.push(formData)
+            console.log(formData)
+
+            localStorage.setItem("account-data", JSON.stringify(data))
+        })
+
+    </script>
+
+    </html>
+
+    <!-- <script src=""></script> -->
 </body>
+
 </html>
