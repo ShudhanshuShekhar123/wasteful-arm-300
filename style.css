@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
+    width: 100%;
     background-color: #fff;
     position: sticky;
     top: 0px;
@@ -117,246 +117,78 @@
 #container {
     background-color: #d0eaef;
     /* width: 1519px;; */
-    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#container1>h1{
-    padding-top:70px;
-}
-@media screen and (min-width:310px) and (max-width:600px) {
-     #container {
-       display:flex;
-        flex-direction: column;
-    
-        /* display:flex; */
-     
-    }
-    /* #container1{
-        padding-left: 20px;;
-    } */
-    #nav {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    #container4{
-        display:flex;
-        flex-wrap: wrap;
-        height: fit-content;
-    }
-    #innercontainer4 {
-        display:flex;
-        flex-wrap: wrap;
-        height:fit-content;
-        
-    
-    }
-
-    #outsidelogo {
-        height: fit-content;
-        width: fit-content;
-        margin: auto;
-    }
-
-    #logo {
-        flex-direction: column;
-        flex-wrap: wrap;
-        position: relative;
-        top: 60px;
-        margin: auto;
-        height: fit-content;
-
-
-    }
-
-    .companylogo {
-        margin: auto;
-
-    }
-
-    #container2>video{
-        width:100%;
-        
-        /* height: fit-content; */
-        
-        
-    }
-
-    #innerbottom{
-        display:flex;
-        flex-direction: column;
-        height: fit-content;
-        width: fit-content;
-        margin-top:30px;
-       
-    }
-    #innerbottom1{
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: fit-content;
-        margin-top:30px;
-        padding-bottom: 80px;;
-        
-    }
-    #innerbottom2 video{
-        height: fit-content;
-       
-    }
-    #bottom{
-        height: fit-content;
-        margin-top:50px;
-        width:fit-content;
-    }
+#container1>h1 {
+    padding-top: 70px;
 }
 
-@media screen and (min-width:601px) and (max-width:1200px) {
-    #container {
-        display:flex;
-        flex-direction: column-reverse;
-        padding-bottom: 30px;
-        /* border:5px solid black; */
-      height:auto;
-      width:100%;
-        
-    }
-    #container2>video{
-            
-            width:100%;
-        
-    }
-    #container2{
-        /* border:5px solid blue; */
-        width:100%;
-        /* border:5px solid rgb(219, 28, 28); */
-        
-        
-    }
-      #container1{
-        /* width:100%; */
-        /* flex-wrap: wrap; */
-             /* max-width: max-content;
-             width:100% */
-        /* border:5px solid rgb(28, 219, 31); */
-        
-      }
-      #outerlast{
-        display:flex;
-        flex-direction: column;
-      }
-
-    #outerfitness{
-        display:flex;
-        flex-direction: column;
-        height: max-content;
-    }
-
-    #container4{
-        /* width: fit-content; */
-        display:flex;
-    
-        flex-wrap: wrap;
-    }
-
-    #nav {
-        display: flex;
-        /* flex-direction: column; */
-
-        /* flex-wrap: wrap; */
-        
-    
-        
-
-
-    }
-   
-    innercontainer4{
-       display:flex;
-    
-       flex-wrap: wrap;
-    }
-    #logo {
-        flex-direction: column;
-        width: fit-content;
-        position: relative;
-        top: 60px;
-        margin: auto;
-        height: fit-content;
-    }
-
-    #outsidelogo {
-        height: fit-content;
-        width: fit-content;
-    }
-
-    #innerbottom{
-        display:flex;
-        flex-direction: column;
-        height: fit-content;
-        width: fit-content;
-        margin-top:30px;
-       
-    }
-    #innerbottom1{
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: fit-content;
-        margin-top:30px;
-        padding-bottom: 80px;;
-        
-    }
-    #innerbottom2 video{
-        height: fit-content;
-       
-    }
-    #bottom{
-        height: fit-content;
-        margin-top:50px;
-    }
-
-    #fitness1 img{
-        width:100%;
-    }
-
-}
-     #container2>video{
-        width:100%;
-     }
-
-     
 
 #container1 {
 
-    width: 35%;
+    width: 600px;
     /* height: 600px; */
-    padding-left:15px;
+    padding: 65px;
     color: hsl(0, 0%, 20%);
     font-family: HaasText, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    font-size: 35px;
+    font-size: 40px;
+
     /* padding-top: 10px; */
-    margin:30px 20px 90px ;
+    /* margin:30px 20px 90px ; */
     line-height: 75px;
     letter-spacing: -0.5px;
+    /* border:3px solid blue; */
+    /* padding-right: 140px;; */
+
+}
+
+
+#container2 {
+    width: 600px;
+
+
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+
+
+
+
+
+/* #container1 { */
+/* 
+    width: 600px; */
+/* height: 600px; */
+/* padding:65px;
+    color: hsl(0, 0%, 20%);
+    font-family: HaasText, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 40px; */
+
+/* padding-top: 10px; */
+/* margin:30px 20px 90px ; */
+/* line-height: 75px;
+    letter-spacing: -0.5px; */
 /* border:3px solid blue; */
 /* padding-right: 140px;; */
-    
-}
+
+/* } */
 
 #container1>h1::first-line {
     color: #0768F8;
 }
 
+/* 
 #container2 {
-    width: 35%;
-    margin-right: 40px;
-    /* padding-bottom: 170px; */
-    /* height: 287px; */
-    margin-left: 50px;;
+    width: 600px;
+   
 
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
+} */
 
 #container1>p {
     font-size: 20px;
@@ -539,7 +371,7 @@ a {
 #outerfitness {
     display: flex;
     /* justify-content: space-evenly; */
-   
+
 }
 
 #outer1fitness {
@@ -943,24 +775,27 @@ a {
 
 
 /* product page css  */
-    video{
-        width:100%;
-    }
+video {
+    width: 100%;
+}
+
 #product1 {
     display: flex;
-    height: 700px;
+
     background-color: #e3eff5;
     justify-content: space-between;
- height:700px;
-    
-    
-        /* border:10px solid black; */
+
+
+
+    /* border:10px solid black; */
 }
 
 #product2 {
     width: 40%;
     /* border:2px solid black; */
-    padding-top: 160px;
+    padding-top: 60px;
+    ;
+
 
 
 
@@ -970,15 +805,16 @@ a {
 
 #product3 {
     width: 50%;
-    padding-top: 80px;;
+    padding-top: 80px;
+    ;
     /* border:2px solid black; */
     /* padding-left: 80px; */
     /* height: 700px; */
 }
 
 #product3 img {
-    width: 70%;
-    
+    width: 100%;
+
 }
 
 #product2 h1 {
@@ -1021,29 +857,248 @@ a {
     padding-left: 40px;
 }
 
-@media  (min-width:600px) and (max-width:900px) {
-   
-       #product1{
-        /* flex-grow: 1; */
+@media screen and (min-width:310px) and (max-width:500px) {
+    #container {
         display: flex;
         flex-direction: column;
+
+        /* display:flex; */
+
+    }
+
+    /* #container1{
+       padding-left: 20px;;
+   } */
+    #nav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #container4 {
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    #innercontainer4 {
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+
+
+    }
+
+    #outsidelogo {
+        height: fit-content;
+        width: fit-content;
+        margin: auto;
+    }
+
+    #logo {
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        top: 60px;
+        margin: auto;
+        height: fit-content;
+
+
+    }
+
+    .companylogo {
+        margin: auto;
+
+    }
+
+    video {
+        width: 100%;
+
+        /* height: fit-content; */
+
+
+    }
+
+    #innerbottom {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 30px;
+
+    }
+
+    #innerbottom1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin-top: 30px;
+        padding-bottom: 80px;
+        ;
+
+    }
+
+    #innerbottom2 video {
+        height: fit-content;
+
+    }
+
+    #bottom {
+        height: fit-content;
+        margin-top: 50px;
+        width: fit-content;
+    }
+}
+
+
+
+@media screen and (min-width:510px) and (max-width:1200px) {
+    #container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        /* padding-bottom: 30px; */
+        /* border:5px solid black; */
+        /* height:auto; */
+    }
+
+    video {
+        width: 100%;
+
+    }
+
+    #container2 {
+        /* border:5px solid blue; */
+        padding-top: 30px;
+        width: 100%;
+        /* border:5px solid rgb(219, 28, 28); */
+
+
+    }
+
+    #container1 {
+        width: 100%;
+        padding: 0px;
+        /* flex-wrap: wrap; */
+        /* max-width: max-content;
+             width:100% */
+        /* border:5px solid rgb(28, 219, 31); */
+
+    }
+
+    #outerlast {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #outerfitness {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+
+    #container4 {
+        /* width: fit-content; */
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+
+    #nav {
+
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    width:100%;
+
+    /* flex-direction: column; */
+
+    /* flex-wrap: wrap; */
+
+
+
+
+
+
+
+    innercontainer4 {
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        flex-direction: column;
+        width: fit-content;
+        position: relative;
+        top: 60px;
+        margin: auto;
+        height: fit-content;
+    }
+
+    #outsidelogo {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    #innerbottom {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 30px;
+
+    }
+
+    #innerbottom1 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin-top: 30px;
+        padding-bottom: 80px;
+        ;
+
+    }
+
+    #innerbottom2 video {
+        height: fit-content;
+
+    }
+
+    #bottom {
+        height: fit-content;
+        margin-top: 50px;
+    }
+
+    #fitness1 img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:300px) and (max-width:1200px) {
+    #product1 {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    #nav{
         width:100%;
-        /* margin:30px; */
-     /* border:10px solid black; */
-     gap:10px;
-     
-        /* flex-direction: column; */
-          /* min-width: 300px; */
-         
-    
-        
-       }
-     
+    }
 
-       #product3>img{
-        width:100%;
-       }
-      
-} 
+    #product2>h1 {
+        font-size: 50px;
+    }
 
+    #product2 {
 
+        width: 100%;
+        padding-right:20px;
+    }
+
+    #product3 {
+        width: 100%;
+        padding-top: 60px;
+    }
+}
